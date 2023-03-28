@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网页设计大赛</title>
+  <link rel="icon" href="./images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class='shadow_page'>
+    <div class="lds-roller">
+    </div>
+    <div id="loading-text-intro">
+      <div id="tips">
+      </div>
+      <div class="contents" style="font-family: KaiTi ;">
+        <p style="text-align: center;"><img class="logomao" src="./images/maopng.png"></p>
+        <h5 style="text-align: center;">· <button id="enterhtml">页面加载中... </button> ·</h5>
+        <p style="text-align: center;"><img class="fontmao" style="width: 17%;height: 15%;margin-top: 30px;"
+            src="./images/ziti.png">
+
+        <p class="tips" style="text-align: center;">广州大学第18届学术科技节 | 网页设计大赛 | 参赛作品</p>
+        </p>
+      </div>
+    </div>
+
+    <!-- 主内容 -->
+    <div class="content" style="visibility: hidden">
+      <!-- 导航 -->
+      <nav class="header">
+        <a href="#name1" class="active a"><span>简介</span></a>
+        <a href="#name2" class="a"><span>生平</span></a>
+        <a href="#name3" class="a"><span>思想</span></a>
+        <a href="#name4" class="a"><span>作品</span></a>
+        <a href="#name5" class="a"><span>关于</span></a>
+        <div class="cursor"></div>
+      </nav>
+
+      <!-- 模型页 -->
+      <section class="section first">
+        <div class='info'>
+          <h2 class='name' style="font-family:mao;font-size: 100px;">毛泽东</h2>
+          <h1 class='title'>Chairman Mao</h1>
+          <p class='description'>&nbsp;</p>
+        </div>
+        <canvas id='canvas-container' class='webgl'></canvas>
+      </section>
+
+      <!-- 人物简介 -->
+      <section class="section introduce">
+        <a id="name1"></a>
+        <!-- 左上标题 -->
+        <div class="head">
+          <h1 class="title">人物介绍</h1>
+          <h3 class="head-bottom">Biography information</h3>
+        </div>
+        <div class="detail">
+          <p>毛泽东，字润之，湖南湘潭人。生于1893年12月26日，1976年9月9日与世长辞。自1945年起任中国共产党中央
+            委员会主席和中国共产党中央军事委员会主席，成为中共中央主要负责人；1949年起终身担任中华人民共和国最
+            高领导人。中国共产党第一代中央集体领导的领导核心，中国人民解放军的主要缔造者，党和国家领导人。国民
+            政府时期和中华人民共和国政府时期的无产阶级政治家、理论家、军事战略家和诗人。</p>
+        </div>
+      </section>
+
+      <!-- 生平简历 -->
+      <a id="name2"></a>
+      <div class="section second">
+        <div class="title1">
+          <p>生平经历</p>
+        </div>
+        <!-- 左边文字 -->
+        <div class="second-container">
+          <ul class="title">
+            <li id="one" class="active">早年生涯</li>
+            <li id="two">壮年时期</li>
+            <li id="three">建政初期</li>
+            <li id="four">晚年岁月</li>
+          </ul>
+        </div>
+        <div class="main-container">
+          <p class="text" id="content">
+            青年时，毛主席为组织湖南赴法勤工俭学运动第一次到北京。在北京期间，他担任了北京大学图书馆管理员，得到李大钊等人帮助，开始接受俄国十月革命的思想影响。毛主席后来这么形容自己的这次经历，“我自己在北平的生活是十分困苦的。我住在一个叫三眼井的地方，和另外七个人合住一个小房间，我们全体挤在炕上，连呼吸都地方都没有。每逢我翻身都得预先警告身旁的人。不过在公园和故宫的宫址我看到了北国的早春，在坚冰还盖着北海的时候，我看到了怒放的梅花。北京的树木引起了我无穷的欣赏。”在困苦的生活中毛主席也总是充满对生活的欣赏和希望。随后，毛泽东开始了他的海外游学生涯。他先后在美国、英国、法国等国学习，并在那里接触了许多先进的思想和新技术。这些青年经历对他后来的政治生涯产生了深远的影响。
+          </p>
+          <div id="images">
+            <img style="display: block;" id="img1" src="images/1919.jpg" width="320vw" height="400vh" />
+            <img style="display: none;" id="img2" src="images/1925.jpg" width="320vw" height="400vh" />
+            <img style="display: none;" id="img3" src="images/1949.jpg" width="320vw" height="400vh" />
+            <img style="display: none;" id="img4" src="images/1966.jpg" width="320vw" height="400vh" />
+          </div>
+        </div>
+        <!-- <canvas id='canvas-container-details' class='webgl'></canvas> -->
+
+      </div>
+
+      <!-- 毛泽东思想 -->
+      <a id="name3"></a>
+      <div class="spirit">
+        <p class="title">毛泽东思想</p>
+        <div class="con">
+          <div class="timeline-con">
+            <div class="timeline-post">
+              <div class="timeline-date">1921—1927</div>
+              <div class="timeline-icon-con">
+                <div class="timeline-icon">
+                  <div class="timeline-icon-inner"></div>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h3>萌芽时期</h3>
+                <p style="font-family:'Courier New', Courier, monospace;font-size: 15px;">
+                  关于新民主主义基本思想的提出标志着毛泽东思想的萌芽。李大钊、瞿秋白、邓中夏等党早期领导人对中国社会和中国革命的基本问题进行了初步而独到的论述。
+                </p>
+              </div>
+            </div>
+            <div class="timeline-post">
+              <div class="timeline-date" style="position:relative;margin-left:220px;top: 35px;">1927—1935</div>
+              <div class="timeline-icon-con">
+                <div class="timeline-icon">
+                  <div class="timeline-icon-inner"></div>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h3>形成时期</h3>
+                <p style="font-family:'Courier New', Courier, monospace;font-size: 15px;">
+                  独创性地探索了适合中国特点的农村包围城市、武装夺取政权的新道路，标志着毛泽东思想的基本形成。“八七会议”（1927年8月）提出了土地革命和武装斗争的基本路线；“三湾改编”（1927年9月）提出了党对军队的绝对领导；遵义会议确立了以毛泽东为核心的党中央的正确领导。
+                </p>
+              </div>
+            </div>
+            <div class="timeline-post">
+              <div class="timeline-date">1935—1945</div>
+              <div class="timeline-icon-con">
+                <div class="timeline-icon">
+                  <div class="timeline-icon-inner"></div>
+                </div>
+              </div>
+              <div class="timeline-content">
+                <h3>成熟时期</h3>
+                <p style="font-family:'Courier New', Courier, monospace;font-size: 15px;">
+                  党的七大把毛泽东确立为全党的指导思想。新民主主义革命理论完整形成标志着毛泽东思想的成熟。第一次提出“毛泽东思想”这一概念的是王稼祥的《中国共产党与中国民族解放的道路》一文。
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <p class="context">
+          毛泽东思想是由毛泽东等人提出并在20世纪中国社会主义革命和建设中大范围实践的一种政治、军事、经济理论体系，一般认为其为马列主义在中国的发展。在中国以外广泛称为毛主义（英语：Maoism），但中国共产党官方从未使用过这个词，一直使用“毛泽东思想”这一术语。毛泽东思想是中国共产党的指导思想之一。中国共产党认为毛泽东思想是其取得新民主主义革命、抗日战争、国共内战胜利并建立中华人民共和国、进行社会主义建设的思想指导。<br><br>
+          改革开放后，中国共产党中央委员会通过的《关于建国以来党的若干历史问题的决议》定义毛泽东思想为中国共产党第一代中央领导集体智慧的结晶，而不只是毛泽东个人的思想。认为毛泽东思想在六个方面以独创性的理论丰富和发展了马克思列宁主义，而毛泽东思想的活的灵魂，即贯串于六个组成部分的立场、观点和方法，有三个基本方面：实事求是，群众路线，独立自主。认为新民主主义理论和人民民主专政等理论经过了历史的实践检验，已证明其行之有效。<br><br>
+          毛泽东的政治思想、经济思想、军事思想、外交思想、文艺思想、哲学思想等多方面内容，影响了20世纪全球广泛地区。具体内容有“枪杆子里面出政权”、“星星之火，可以燎原”、“没有调查，就没有发言权”、“农村包围城市”、“兵民是胜利之本”、“文艺为无产阶级革命服务”、“新民主主义”、“批评和自我批评”、“群众路线”、“统一战线”、“团结一切可以团结的人”、“人民战争”、“人民是创造世界历史的动力”、“调动一切积极因素”、“无产阶级专政下继续革命”、“三个世界”等
+        </p>
+      </div>
+
+      <!-- <div id="spirit">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="height: 100vh;">
+              <div class="firstpage" style="height: 100vh;">
+                  <p>毛泽东思想</p>
+              </div>
+              
+
+            </div>
+            <div class="swiper-slide" style="height: 100vh;">Slide 2</div>
+            <div class="swiper-pagination1"></div>
+          </div>
+        </div> -->
+      <!-- <div class="mind">
+      </div> -->
+      <!-- 经典作品 -->
+      <a id="name4"></a>
+      <div class="workSet">
+        <div class="title">
+          <p>经典作品集</p>
+        </div>
+        <div id="carousel" style="padding-top: 100px ;">
+          <div class="swiper swiper-3d">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/mzdxj.png" />
+                <p>《毛泽东选集》</p>
+              </div>
+              <div class="swiper-slide"><img src=" ./images/cjz.png" />
+                <p>《论持久战》抗战的前途与命运</p>
+              </div>
+              <div class="swiper-slide"><img src="./images/xmz.png" />
+                <p>《新民主主义论》中国将向何处去</p>
+              </div>
+              <div class="swiper-slide"><img src="./images/mzdwj.jpg" />
+                <p>《毛泽东文集》</p>
+              </div>
+              <div class="swiper-slide"><img src="./images/wrmfw.jpg" />
+                <p>《为人民服务》局部手稿
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- 移动端轮播图 -->
+        <div class="modelswiper" style="display: none;">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div><img src="./images/mzdxj.png">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src=" ./images/cjz.png">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="./images/xmz.png"></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="./images/mzdwj.jpg"></div>
+              </div>
+              <div class="swiper-slide">
+                <div><img src="./images/wrmfw.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+
+        <!-- The SVG filter used to create the merging effect -->
+        <svg id="filters">
+          <defs>
+            <filter id="threshold">
+              <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+              <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                              0 1 0 0 0
+                              0 0 1 0 0
+                              0 0 0 255 -140" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="intro">
+          <p>
+            毛主席一生创作过不少诗词，经其本人手定正式发表的有39首。此外还有一些未经他本人手定发表的诗词。中国出版多种版本的毛泽东诗词选集和注释赏析，著名的有中央文献出版社出版的《毛泽东诗词集》，收入诗词67首。毛泽东著名诗词有《沁园春·长沙》、《西江月·井冈山》、《沁园春·雪》、《贺新郎·读史》等。<br><br>
+            作为学问家，毛泽东终生治学，是独特的学者型读书专家。他早年读中国四书五经等，中年读西方社会科学与哲学，晚年读中外历史与传记等。在延安初期，他研读并详批米丁著、沈志远译《辩证唯物论与历史唯物论》（1936年12月初版），整理出《辩证法唯物论（讲授提纲）》，最终写成哲学专著《实践论》与《矛盾论》，
+            成为其后续重要著作的哲学基础。毛泽东酷爱读史，晚年几乎通读二十四史，多读重点史册或篇章。他评点《三国志·刘表传》：“虚有其表”；评点《三国志·张鲁传》：“时来天地皆同力，运去英雄不自由”[註
+            1]；评点《宋史·太祖本纪》：“不择手段，急于登台”；等等。他读书时既读又记、既批注又发挥。<br><br>
+            毛泽东的书法风格被称为毛体，在中国广泛使用。毛泽东曾为《人民日报》、人民邮电、新华书店、人民教育出版社、北京大学、清华大学等单位题名。还有许多单位的名字是搜集毛泽东的字而成。</p>
+        </div>
+        <!-- 弹幕留言 -->
+        <div class="comment">
+          <div class="video-x">
+            <canvas id="canvasBarrage" class="canvas-barrage"></canvas>
+            <div class="video-placeholder"></div>
+          </div>
+          <form>
+            <textarea id="textarea" name="text" class="feedback-input" placeholder="留下你的评价或者想法吧"></textarea>
+            <div id="mycomment" type="submit" style="text-align: center;">评论</div>
+          </form>
+        </div>
+
+      </div>
+      <!-- 微信弹窗 -->
+      <div class="zhezhao" id='zhezhao' style="display: none;">
+        <div class="tankuang">
+          <div id="header">
+            <div id="header-right">x</div>
+          </div>
+          <div id="img">
+            <img src="../static/image/a91a466aab018c1c8f70a3b27ef0c43.jpg">
+          </div>
+        </div>
+      </div>
+      <!-- 分享弹窗 -->
+      <div class="zhezhao1" id='zhezhao1' style="display: none;">
+        <div class="tankuang1">
+          <div id="header1">
+            <div id="header-right1">x</div>
+          </div>
+          <div id="img">
+            <img src="../static/image/qrcode.png">
+          </div>
+        </div>
+      </div>
+      <!--  footer -->
+      <a id="name5"></a>
+      <footer class="site-footer">
+        <div class="container1">
+
+          <div class="about">
+            <h6>About</h6>
+            <p class="text-justify">该网页的模型，图片以及文字素材均来源于网络，大标题字体采用毛体，正文采用宋体
+            </p>
+          </div>
+
+          <div class="catagories">
+            <h6>Resources</h6>
+            <ul class="footer-links">
+              <li><a href="https://sketchfab.com/">Sketchfab</a></li>
+              <li><a href="https://www.iconfont.cn/">阿里巴巴矢量图库</a></li>
+              <li><a href="https://pixabay.com/">pixabay</a></li>
+            </ul>
+          </div>
+
+          <div class="quicklinks">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="https://baike.baidu.com/item/%E6%AF%9B%E6%B3%BD%E4%B8%9C/113835?fr=kg_general">百度百科</a>
+              </li>
+              <li><a href="https://zh.m.wikipedia.org/zh-cn/%E6%AF%9B%E6%B3%BD%E4%B8%9C">维基百科</a></li>
+              <li><a href="https://www.dswxyjy.org.cn/GB/427196/423773/428236/index.html">理论中国网</a></li>
+            </ul>
+          </div>
+
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">
+              <h1 style="margin-top: 20px;">联系我们</h1>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons" style="margin-top: -30px;">
+                <li><a class="facebook" href="https://github.com/Tycho457/Web-Design-Competition"><i class="iconfont icon-github"></i></a></li>
+                <li><a id="share" class="dribbble"><i class="iconfont icon-fenxiang"></i></a></li>
+                <li><a id="weixin"><i class="iconfont icon-weixin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
